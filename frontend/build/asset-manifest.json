@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/dance-teacher/static/css/main.659aae93.css",
+    "main.js": "/dance-teacher/static/js/main.2451936b.js",
+    "static/js/453.2c41c3b9.chunk.js": "/dance-teacher/static/js/453.2c41c3b9.chunk.js",
+    "static/media/dancer.png": "/dance-teacher/static/media/dancer.18d4eb7c2c248ce148ba.png",
+    "static/media/repeatB.png": "/dance-teacher/static/media/repeatB.5a4f72e21d8e57bda398.png",
+    "static/media/repeatA.png": "/dance-teacher/static/media/repeatA.32af11bd75a28ad1ca9d.png",
+    "index.html": "/dance-teacher/index.html",
+    "static/media/test.mp4": "/dance-teacher/static/media/test.31d6cfe0d16ae931b73c.mp4",
+    "main.659aae93.css.map": "/dance-teacher/static/css/main.659aae93.css.map",
+    "main.2451936b.js.map": "/dance-teacher/static/js/main.2451936b.js.map",
+    "453.2c41c3b9.chunk.js.map": "/dance-teacher/static/js/453.2c41c3b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.659aae93.css",
+    "static/js/main.2451936b.js"
+  ]
+}

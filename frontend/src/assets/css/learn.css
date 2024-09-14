@@ -1,0 +1,6 @@
+#upload_panel {
+    position: fixed;
+    z-index: 1;
+    color: white;
+    top:0;
+}
