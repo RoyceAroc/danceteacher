@@ -12,14 +12,14 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="dance-teacher" element={
+        <Route path="danceteacher" element={
           <>
             <Navbar />
             <Home />
           </>
         } />
-        <Route path="dance-teacher/investors" element={<Investors />} />
-        <Route path="dance-teacher/learn" element={<Learn />} />
+        <Route path="danceteacher/investors" element={<Investors />} />
+        <Route path="danceteacher/learn" element={<Learn />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

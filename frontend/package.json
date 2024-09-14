@@ -1,8 +1,8 @@
 {
-  "name": "dance-teacher",
+  "name": "danceteacher",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://roycearoc.github.io/dance-teacher",
+  "homepage": "https://roycearoc.github.io/danceteacher",
   "dependencies": {
     "@mediapipe/pose": "^0.5.1675469404",
     "@tensorflow-models/pose-detection": "^2.1.3",
