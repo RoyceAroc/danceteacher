@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <Link to="http://github.com">GitHub</Link>
+        <Link to="https://github.com/RoyceAroc/danceteacher/">GitHub</Link>
       </nav>
       <Outlet />
     </>
