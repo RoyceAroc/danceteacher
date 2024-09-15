@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Similarity Checker</title>
+</head>
+<body>
+	<h1>Image Similarity Checker</h1>
+	<img id="img1" src="1.png" alt="Image 1">
+	<img id="img2" src="2.png" alt="Image 2">
+	<p id="similarity"></p>
+
+	<script>
+
+const img1 = document.getElementById('img1');
+const img2 = document.getElementById('img2');
+const similarityElement = document.getElementById('similarity');
+
+// Function to convert image to grayscale
+function toGrayscale(img) {
+	const canvas = document.createElement('canvas');
+	canvas.width = img.width;
+	canvas.height = img.height;
+	const ctx = canvas.getContext('2d');
+	ctx.drawImage(img, 0, 0);
+	const pixels = ctx.getImageData(0, 0, img.width, img.height).data;
+	for (let i = 0; i < pixels.length; i += 4) {
+		const gray = (pixels[i] + pixels[i + 1] + pixels[i + 2]) / 3;
+		pixels[i] = gray;
+		pixels[i + 1] = gray;
+		pixels[i + 2] = gray;
+	}
+	return pixels;
+}
+
+// Function to calculate similarity between two images
+function calculateSimilarity(img1, img2) {
+	const grayscale1 = toGrayscale(img1);
+	const grayscale2 = toGrayscale(img2);
+	let difference = 0;
+	for (let i = 0; i < grayscale1.length; i += 4) {
+		difference += Math.abs(grayscale1[i] - grayscale2[i]);
+	}
+	const similarity = 1 - (difference / (grayscale1.length / 4));
+	return similarity;
+}
+
+// Calculate and display similarity
+const similarity = calculateSimilarity(img1, img2);
+similarityElement.textContent = `Similarity: ${similarity.toFixed(2)}`;
+
+    </script>
+</body>
+</html>

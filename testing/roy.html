@@ -1,0 +1,32 @@
+<html>
+    <script>
+          function dotProduct(vector1, vector2) {
+            const dot = vector1[0] * vector2[0] + vector1[1] * vector2[1];
+
+            // Compute magnitudes of the vectors
+            const magnitude1 = Math.sqrt(vector1[0] ** 2 + vector1[1] ** 2);
+            const magnitude2 = Math.sqrt(vector2[0] ** 2 + vector2[1] ** 2);
+
+            // Prevent division by zero by ensuring magnitudes are not zero
+            if (magnitude1 === 0 || magnitude2 === 0) {
+                return 0;  // Consider zero as a result for zero magnitude
+            }
+
+            // Compute cosine similarity
+            const cosineSimilarity = dot / (magnitude1 * magnitude2);
+
+            return cosineSimilarity;  // Return value between -1 and 1
+        }
+
+
+        const startTime = new Date().getTime();
+
+        for(let i=0; i<10*60*10; i++) {
+            let dot = dotProduct([897, 321], [567, 890])
+        }
+        const endTime = new Date().getTime();
+                    const executionTimeMs = endTime - startTime;
+
+                    console.log(`Execution time: ${executionTimeMs}ms`);
+    </script>
+</html>
