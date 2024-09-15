@@ -6,10 +6,9 @@ import * as posedetection from '@tensorflow-models/pose-detection';
 import {STATE} from '../src/params';
 import { Camera } from '../src/camera';
 import {Renderer} from '../src/renderer';
-import testVideo from '../../../../src/assets/media/sample1.mp4';
 import sample1Video from '../../../../src/assets/media/sample1.mp4';
-import sample2Video from '../../../../src/assets/media/sample1.mp4';
-import sample3Video from '../../../../src/assets/media/sample1.mp4';
+import sample2Video from '../../../../src/assets/media/sample2.mp4';
+import sample3Video from '../../../../src/assets/media/sample3.mp4';
 import obj from '../../../assets/media/sample_json/sample1.json'
 import sample1 from '../../../assets/media/sample_json/sample1.json'
 import sample2 from '../../../assets/media/sample_json/sample2.json'
