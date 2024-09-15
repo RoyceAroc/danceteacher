@@ -2,4 +2,6 @@
 Teaching you to dance without having you to interact with the video.
 
 ## Website URL
-https://roycearoc.github.io/danceteacher/
+https://b2lffbhv-5000.use.devtunnels.ms/danceteacher/
+(hosting through devtunnel so there is latency issues and depends on school wifi for now)
+(we are working on getting a better URL at danceteacher.site)

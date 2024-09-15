@@ -22,7 +22,9 @@ def upload_video():
     video_filename = video_file.filename
     video_path = os.path.join(UPLOAD_DIR, video_filename)
     video_file.save(video_path)
-    video_url = f"https://l73smpwh.use.devtunnels.ms:5000/videos/{video_filename}"
+    video_url = (
+        f"https://b2lffbhv-3000-inspect.use.devtunnels.ms:5000/videos/{video_filename}"
+    )
     return jsonify({"video_url": video_url})
 
 
@@ -59,7 +61,7 @@ def download_video(url):
 def download_and_host_video():
     url = request.json["url"]
     video_title = download_video(url)
-    video_url = f"https://l73smpwh.use.devtunnels.ms:5000/{video_title}"
+    video_url = f"https://b2lffbhv-3000-inspect.use.devtunnels.ms:5000/{video_title}"
     if video_url:
         return jsonify({"video_url": video_url})
     else:
@@ -75,4 +77,4 @@ if __name__ == "__main__":
     os.makedirs(DOWNLOAD_DIR, exist_ok=True)
     os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

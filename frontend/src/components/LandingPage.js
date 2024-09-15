@@ -24,7 +24,7 @@ function MainPage() {
     const formData = new FormData();
     formData.append("video", videoFile);
 
-    fetch("https://l73smpwh.use.devtunnels.ms:5000/upload", {
+    fetch("https://b2lffbhv-3000-inspect.use.devtunnels.ms:5000/upload", {
       method: "POST",
       body: formData,
     })
@@ -40,7 +40,7 @@ function MainPage() {
   
   const handleYoutubeLinkSubmit = (e) => {
     if (youtubeLink) {  
-      const apiUrl = 'https://l73smpwh.use.devtunnels.ms:5000/download';
+      const apiUrl = 'https://b2lffbhv-3000-inspect.use.devtunnels.ms:5000/download';
       fetch(apiUrl, {
         method: 'POST',
         headers: {

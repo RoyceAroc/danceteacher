@@ -503,7 +503,7 @@ export async function chooseTask(setLoading) {
                 }
                 
             }, 20) // change this to 2000 later to fake processing lmao
-        } else if (taskOption.startsWith("https://l73smpwh.use.devtunnels.ms:5000/")) {
+        } else if (taskOption.startsWith("https://b2lffbhv-3000-inspect.use.devtunnels.ms:5000/")) {
             gatherData(taskOption, setLoading);
         } else {
             window.location.href = "/danceteacher"
